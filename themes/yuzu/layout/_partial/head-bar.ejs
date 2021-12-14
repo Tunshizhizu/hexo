@@ -1,0 +1,10 @@
+<div class="barShow-head" id="barShow">
+  <ul class="barShow-ul">
+    <% for (var i in config.menu){ %>
+      <li class="barShow-item">
+        <a href="<%- url_for(config.menu[i].link) %>"><span>
+            <%= i %></span></a>
+      </li>
+    <% } %>
+  </ul>
+</div>

@@ -3,20 +3,25 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-keywords:
-author: John Doe
-language:
-timezone:
+title: 吞噬之祖的小草庐
+subtitle: 杂思异想糊涂地
+description: 吞噬之祖的小草庐/咖啡机的收容间/又菜又爱写东西/没事胡思乱想/穷兮兮
+keywords: 咖啡机, SCP-294, 吞噬之祖
+author: 吞噬之祖
+language: zh-CN
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://www.tunshi.site/
 root: /
-permalink: :year/:month/:day/:title/
 permalink_defaults:
+
+# permalink: :year/:month/:day/:title/
+permalink: p/:abbrlink.html  # p 是自定义的前缀
+abbrlink:
+    alg: crc32   #算法： crc16(default) and crc32
+    rep: hex     #进制： dec(default) and hex
 
 # Directory
 source_dir: source
@@ -73,9 +78,61 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: yuzu
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+since_year: 2021
+
+post_copy:
+  text: 署名-非商业性使用-相同方式共享
+  text_en: CC BY-NC-SA 4.0 CN
+  link: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh
+
+# 自定义侧边栏
+menu:
+  时间线:
+    widget: Archives # 三种：Archives | Posts | Tags
+    link: /archives
+  拙诗顽词:
+    name: zhuoshi
+    widget: Posts
+    link: /categories/zhuoshi
+  怪想奇思:
+    name: guaixiang
+    widget: Posts
+    link: /categories/guaixiang
+  无戒诳语:
+    name: wujie
+    widget: Posts
+    link: /categories/wujie
+  珍言妙句:
+    name: zhenyan
+    widget: Posts
+    link: /categories/zhenyan
+  一时之困:
+    name: yishi
+    widget: Posts
+    link: /categories/yishi
+  意兴留痕:
+    name: yixing
+    widget: Posts
+    link: /categories/yixing
+  标签:
+    widget: Tags
+    link: /tags
+
+# 右上角
+otherMenu2:
+  关于: /about
+
+# 备案
+beian:
+  enable: false
+  icp: 京ICP备2021005293号
+
+# toc
+toc: true

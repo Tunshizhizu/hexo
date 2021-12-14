@@ -1,0 +1,19 @@
+<span class="footer-msg">
+  <% if (config.beian && config.beian.enable) { %>
+    <div class="icp">
+      <img src="/img/icp.png">
+      <a href="https://beian.miit.gov.cn/" class="icp-text" target="_blank">
+        <%- config.beian.icp %>
+      </a>
+    </div>
+  <% } %>
+  &copy;
+  <%- config.since_year %>
+  <% let current = date(Date.now(), "YYYY") %>
+  <% if (current != config.since_year ) { %>
+    <span class="timeDivide">-</span>
+    <%- current %>
+  <% } %>
+  <%- config.author %>.&nbsp;
+  All rights reserved.
+</span>

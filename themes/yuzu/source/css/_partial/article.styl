@@ -1,0 +1,99 @@
+.post
+  padding: 40px 0
+  margin: auto
+  font-family: 'Noto Serif', 'Noto Serif SC', sans-serif
+
+  .post-head
+    .post-title
+      margin: 0px 0px 10px
+
+      a
+        position: relative
+        display: inline-block
+        vertical-align: middle
+        overflow: hidden
+        color: secondary-color
+        text-decoration: none
+        font-weight: normal
+
+  .post-datetag
+    info-text()
+    margin-bottom: 10px
+
+    .post-date
+      display: inline-block
+
+      .post-time
+        font-family: 'Raleway', Georgia, 'Times New Roman', Times, serif
+
+    .post-tag
+      display: inline-block
+      margin-left: 20px
+
+      a
+        color: primary-gray
+        text-decoration: none
+
+  .post-cc
+    primary-link-text()
+    margin-bottom: 20px
+
+  p
+    content-text()
+
+  blockquote>p
+    quoted-text()
+
+  counter-reset: table-num
+
+  .table-container
+    margin-top: 1.5em
+    margin-bottom: 1em
+
+    table
+      margin-left: auto
+      margin-right: auto
+
+    .table-title
+      font-size: default-font-size
+      font-weight: 600
+      text-align: center
+      counter-increment: table-num
+
+    .table-title:before
+      content: '表' counter(table-num) '. '
+
+  >table, div>table
+    min-width: 60%
+    margin-top: 1.5em
+    margin-bottom: 1em
+    margin-left: auto
+    margin-right: auto
+
+  caption
+    font-size: default-font-size
+    font-weight: 600
+    text-align: center
+
+  counter-reset: figure-num
+
+  .figure-container
+    margin-bottom: 1.5em
+
+    .figure-title
+      font-size: default-font-size
+      font-weight: 600
+      text-align: center
+      counter-increment: figure-num
+
+    .figure-title:before
+      content: '图' counter(figure-num) '. '
+
+  figure
+    figcaption
+      font-size: default-font-size
+      font-weight: 600
+      text-align: center
+      display: block
+      margin-top: 0.5em
+      margin-bottom: 1.5em
