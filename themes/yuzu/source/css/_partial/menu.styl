@@ -1,0 +1,57 @@
+.menu-nav
+  float: left
+  width: 19%
+  padding-top: 40px
+  color: secondary-gray
+
+  .menu-nav-item
+    info-text()
+
+    .menu-nav-item-tit
+      padding-bottom: 5px
+      border-bottom: 1px solid primary-gray
+
+      a
+        primary-link-text()
+
+  div.menu-nav-item:not(:first-of-type)
+    margin-top: 2.5em
+
+.menu-nav-item-cont
+  margin-top: 1.5em
+
+  .menu-nav-item
+    line-height: 1.25em
+    white-space: normal
+    padding-bottom: 1em
+    word-wrap: break-word
+
+    a
+      color: secondary-color
+
+  .menu-nav-item.empty
+    color: secondary-gray
+
+// Archive menu
+.menu-nav-item-cont.archives
+  .archive-list-item
+    height: 2em
+    line-height: 2em
+
+    a
+      color: secondary-color
+
+// Tag menu
+.menu-nav-item-cont.tags
+  .tag-list-item
+    display: inline-block
+    padding: 0px 10px 7px 0px
+
+    a
+      color: secondary-color
+
+    .tag-list-count
+      vertical-align: super
+      font-size: 0.6em
+      color: secondary-gray
+      margin-top: -0.5em
