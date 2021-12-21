@@ -2,7 +2,7 @@
   function renderPostList(category) {
     let cat = site.categories.findOne({ name: category })
     if (!cat || !cat.posts || !cat.posts.length) { %>
-      <p class="menu-nav-item empty">还没有内容。</p>
+      <p class="menu-nav-item empty">Empty~</p>
 <%
       return;
     }

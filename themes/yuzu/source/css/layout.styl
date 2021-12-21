@@ -1,12 +1,16 @@
+$theme-selectable = hexo-config('selectable')
+
 html
   font-size: default-font-size
-  box-sizing: border-box
   font-family: default-font-family
+  box-sizing: border-box
+  background-color($background-color, background-color-light, background-color-dark)
+  scroll-behavior: smooth
 
 body
   padding: 0
   margin: 0
-  color: secondary-color
+  text-color(primary-color, primary-color-light, primary-color-dark)
   vertical-align: baseline
 
 *
@@ -14,16 +18,18 @@ body
   padding: 0px
   list-style: none
   text-decoration: none
-  user-select: none
-  -webkit-user-select: none
-  -ms-user-select: none
-  -moz-user-select: none
+
+  if (!$theme-selectable)
+    user-select: none
+    -webkit-user-select: none
+    -ms-user-select: none
+    -moz-user-select: none
 
 a, a:visited
-  color: primary-gray
+  text-color(primary-gray, primary-gray-light, secondary-color-dark)
 
 a:hover
-  color: secondary-gray
+  text-color(secondary-gray, secondary-gray-light, secondary-gray-dark)
 
 img
   max-width: 100%
@@ -44,12 +50,16 @@ del
   top: 0
   right: 0
   left: 0
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15)
-  background: background-color
+  border-bottom: 1px solid
+  border-color($border-color, border-color-light, border-color-dark)
+  background-color($background-color, background-color-light, background-color-dark)
 
 @media screen and (max-width: 750px)
   .head
     position: fixed
+
+  .about, .post-item .post-item-head .post-item-title a, .head-authorLink
+    font-weight: 400 !important
 
   .menu-nav, #head-about, .post-widget
     display: none
@@ -68,10 +78,11 @@ del
     position: fixed
     left: 0px
     top: 65px
-    background: background-color
+    background-color($background-color, background-color-light, background-color-dark)
     width: 100%
-    border-bottom: 1px solid border-gray
-    border-top: 1px solid border-gray
+    border-top: 1px solid
+    border-bottom: 2px solid
+    border-color(border-gray, border-gray-light, border-gray-dark)
 
   #post
     width: 100%
@@ -122,7 +133,8 @@ del
     info-text()
     margin: 0 auto
     padding: 20px 0
-    border-top: 1px solid border-gray
+    border-top: 1px solid
+    border-color(border-color, border-color-light, border-color-dark)
     max-width: 1000px
     width: 90%
     overflow: hidden
@@ -134,13 +146,13 @@ del
         vertical-align: middle
 
 .page .back-top
-    margin-right: 40px;
-    cursor: pointer;
+  margin-right: 40px
+  cursor: pointer
 
-  .back-top-icon
-    float: right
-    display: inline-block
-    width: 16px
-    height: 16px
-    background-image: url('/img/back-top.png')
-    background-repeat: no-repeat
+.back-top-icon
+  float: right
+  display: inline-block
+  width: 16px
+  height: 16px
+  background-image: url('/img/back-top.png')
+  background-repeat: no-repeat
