@@ -121,6 +121,14 @@ menu:
     name: yixing
     widget: Posts
     link: /categories/yixing
+  收容之地:
+    name: scp
+    widget: Posts
+    link: /categories/scp
+  跑团之遗:
+    name: coc
+    widget: Posts
+    link: /categories/coc
   标签:
     widget: Tags
     link: /tags
