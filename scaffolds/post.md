@@ -1,5 +1,8 @@
 ---
-title: 记得把我也删了
+title: 改我
+date: {{ date }}
+abbrlink: {{ abbrlink }}
+excerpt: 这里是摘要
 ---
 
 
