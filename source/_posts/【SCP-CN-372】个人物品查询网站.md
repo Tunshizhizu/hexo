@@ -1,17 +1,13 @@
 ---
 abbrlink: ''
-categories: []
+categories:
+- - scp
 date: ''
-tags: []
-title: ''
-updated: Tue, 28 Feb 2023 05:56:00 GMT
----
----
+tags:
+- SCP项目
+- 原创
 title: 【SCP-CN-372】个人物品查询网站
-date:
-abbrlink:
-tags: [SCP项目, 原创] 
-categories:scp
+updated: Tue, 28 Feb 2023 06:00:18 GMT
 ---
 项目编号：SCP-CN-372
 
