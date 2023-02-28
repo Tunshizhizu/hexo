@@ -7,7 +7,7 @@ tags:
 - 跑团
 - COC
 title: 【拉比特镇的邀约】LOG-第三章
-updated: Tue, 28 Feb 2023 12:41:08 GMT
+updated: Tue, 28 Feb 2023 12:46:37 GMT
 ---
 <KP机> 书接上回，韦德与弗洛德二人被哈德士警官从警局赶了出来，但二人也算是把档案都看完了
 
