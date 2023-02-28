@@ -1,13 +1,14 @@
 ---
 abbrlink: 46aaa68f
-categories: []
+categories:
+- - COC
 date: '2023-02-28 20:26:55'
 excerpt: 两个骗子开始深入调查这起不同寻常的案件
 tags:
 - 跑团
 - log
 title: 【拉比特镇的邀约】LOG-第二章
-updated: Tue, 28 Feb 2023 12:34:22 GMT
+updated: Tue, 28 Feb 2023 12:51:58 GMT
 ---
 <韦德·亚历克斯（破空）> “那我们谁去局子跑一趟，还是一起？”
 
